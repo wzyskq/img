@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>地理思维导图</title>
+
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://wzyskq.github.io/img/basics/dist/jquery.magnify.css" rel="stylesheet">
+
+    <style>
+        /* body{background-color: black;} */
+
+        .magnify-modal {
+            box-shadow: 0 0 6px 2px rgba(0, 0, 0, .3);
+        }
+
+        .magnify-header .magnify-toolbar {
+            background-color: rgba(0, 0, 0, .5);
+        }
+
+        .magnify-stage {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border-width: 0;
+        }
+
+        .magnify-footer .magnify-toolbar {
+            background-color: rgba(0, 0, 0, .5);
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .magnify-header,
+        .magnify-footer {
+            pointer-events: none;
+        }
+
+        .magnify-button {
+            pointer-events: auto;
+        }
+    </style>
+
+    <link rel="stylesheet" href="demo.css">
+    <link rel="icon" type="image/svg" href="../../picture/p2_icon.svg">
+</head>
+
+<body>
+    <div class="container">
+        <a data-magnify="gallery" href="pic/1.2地球运动的地理意义.png">
+            <img src="pic/1.2地球运动的地理意义.png" alt="" height="100px">
+        </a>
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://wzyskq.github.io/img/basics/dist/jquery.magnify.js"></script>
+    <script>
+        $('[data-magnify]').magnify({
+            resizable: true,
+            initMaximized: true,
+            headerToolbar: [
+                'maximize',
+                'close'
+            ],
+            footerToolbar: [
+                'zoomIn',
+                'zoomOut',
+                'prev',
+                'fullscreen',
+                'next',
+                'actualSize',
+                'rotateRight'
+            ],
+            title: false
+        });
+    </script>
+</body>
+
+</html>
