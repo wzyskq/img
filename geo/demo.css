@@ -28,7 +28,7 @@ img{
     border-radius: 10px;
 
     height: 180px;
-    /* max-width: max(0px,300px); */
+    width: 100px;
 }
 span{margin: 20px;}
 p{
