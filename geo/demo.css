@@ -53,3 +53,21 @@ p{
     justify-content: flex-start;
     flex-wrap: wrap;
 }
+.containerlj{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.louding{
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(199, 199, 199);
+    transition: all 0.2s;
+}
+.louding:hover{
+    text-decoration: none;
+    background-color: aliceblue;
+}
